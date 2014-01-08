@@ -2,26 +2,20 @@ auto: true
 markdown: rdiscount
 pygments: true
 
-title: In The Attic
+title: Sam's Website
 
-url: http://www.in-the-attic.com
+url: http://samcennis.github.com
 
 permalink: /:year/:month/:day/:title/
 
 author:
-    name: Garry Welding
-    email: gkwelding@gmail.com
-    github: gkwelding
-    twitter: GarryWelding
-    gravatar: http://www.gravatar.com/avatar/5b7d3122776b44cfb18ed7aa865804a1.png
+    name: Sam Ennis
+    email: sam.c.ennis@gmail.com
+    github: samcennis
+    youtube: pelicanbeam
+    gravatar: /img/blogHeader.jpg
 
 comments:
     provider: disqus
     disqus:
-        short_name: intheatticuk
-        
-analytics:
-    provider: google 
-    google: 
-        tracking_id: 'UA-18015420-1'
-        domain: 'in-the-attic.com'
+        short_name: n/a

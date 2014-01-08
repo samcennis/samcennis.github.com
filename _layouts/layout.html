@@ -5,8 +5,8 @@
     <meta http-equiv='Content-Type' content='text/html; charset=utf-8'>
     <title>{{ page.title }}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Technical Web Development Blog">
-    <meta name="author" content="Garry Welding">
+    <meta name="description" content="Portfolio and Blog">
+    <meta name="author" content="Sam Ennis">
     <script src="/js/all.js" type="text/javascript"></script>
 	<link href="/css/all.css" rel="stylesheet">	
 	
@@ -19,19 +19,19 @@
     <link rel="shortcut icon" href="/favicon.ico">
   </head>
   <body data-spy="scroll" data-target=".subnav" data-offset="50">
-    {% include navigation.html %}
-
+  
     <div class="container">
         <div class="content">
             <div class="row">
                 <div class="span7 columns">
+					<h2>Updates from Wales</h2>
                     {{ content }}
                 </div>
                 <div class="span4 columns">
                      {% include aboutme.html %}
                 </div>
                 <div class="span4 columns hidden-phone hidden-tablet">
-                     {% include tag_sidebar.html %}
+                     {% include sidebar_menu.html %}
                 </div>
             </div>
         </div>

@@ -29,6 +29,9 @@ a.social {
   margin: 3px;
 }
 
+a.social.youtube {
+  background: url(/img/youtube-icon.png) 0px 0px no-repeat;
+}
 a.social.github {
   background: url(/img/social_icons.png) -68px 0px no-repeat;
 }

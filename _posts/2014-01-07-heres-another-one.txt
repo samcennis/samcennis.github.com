@@ -1,0 +1,23 @@
+---
+comments: true
+date: 2014-01-07 01:39:00
+layout: post
+slug: heres-another-one
+title: Here's another one!
+summary: Here's another one!
+image: placeholder.png
+tags:
+- post
+- cool
+- awesome
+---
+
+#####  I'm trying to post a video!
+
+Wow, I hope this works.
+
+Are there words on this page??
+
+Here's a video:
+
+<iframe width="560" height="315" src="//www.youtube.com/embed/DAM_BrIzY20" frameborder="0" allowfullscreen></iframe>
