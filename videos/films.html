@@ -4,12 +4,12 @@ title: Video Contests
 ---
 <div class="clearfix thumbnails yoxview">
 	<ul class="nav nav-tabs">
-		<li class="active"><a href="/videos/contests.html">Contests</a></li>
+		<li><a href="/videos/contests.html">Contests</a></li>
 		<li><a href="/videos/promos.html">Promos</a></li>
 		<li><a href="/videos/fun.html">For Fun</a></li>
-		<li><a href="/videos/films.html">Short Films</a></li>
+		<li class="active"><a href="/videos/films.html">Short Films</a></li>
 	</ul>
-	{% for video in site.data.contests %}
+	{% for video in site.data.films %}
 		{% include video_link.html %}
 	{% endfor %}
 </div>

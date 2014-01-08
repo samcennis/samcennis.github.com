@@ -1,0 +1,33 @@
+---
+---
+{% include css/bootstrap/bootstrap.min.css %}
+{% include css/custom.css %}
+{% include css/bootstrap/bootstrap-responsive.min.css %}
+{% include js/bootstrap/google-code-prettify/prettify.css %}
+
+
+.thumbnails{ font-size: 10pt; }
+
+
+a.thumbnail
+	{
+	display: block;
+	text-decoration: none;
+	color: Black;
+	width: 100%;
+	margin: 0;
+	border: none;
+	}
+a.thumbnail:hover{ border-color: #000;  background-color: #ddd; -moz-box-shadow: 0 50px 90px rgba(255, 255, 255, 1) inset; -webkit-box-shadow: 0 50px 90px rgba(255, 255, 255, 1) inset; box-shadow: 0 50px 90px rgba(255, 255, 255, 1) inset; }
+a.thumbnail img{ opacity: 0.8; margin-right: 1em; float: left }
+a.thumbnail:hover img{ opacity: 1; border-color: Black; }
+a.thumbnail span
+	{
+	display: block;
+	font-weight: bold;
+	margin-bottom: 0.5em;
+	}
+a.thumbnail .thumbnail_description
+	{
+	font-size: 0.8em;
+	}

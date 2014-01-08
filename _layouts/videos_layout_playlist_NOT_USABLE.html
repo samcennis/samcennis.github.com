@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html class="fuelux" lang="en">
+  
+  <head>
+  
+<title>
+	{{ page.title }}
+</title>
+    <script type="text/javascript" language="javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+	<style type="text/css"></style>
+    <script type="text/javascript" language="javascript" src="/videos/yoxview/yox.js"></script>
+    <!--<script type="text/javascript" language="javascript" src="/videos/yoxview/yoxview-init.js"></script>-->
+	<link rel="Stylesheet" type="text/css" href="/videos/yoxview/yoxview.css">
+	<script type="text/javascript" src="/videos/yoxview/jquery.yoxview-2.21.js"></script>
+    <script language="javascript" type="text/javascript">
+    $(document).ready(function(){
+        $(".yoxview").yoxview({
+			skin: "top_menu",
+            dataUrl: "http://www.youtube.com/my_playlists?p=PLpkyA_SVVJs3sCar_Sq0O_4owLCXI3J5S"
+        });
+    });
+    </script>
+	<link rel="Stylesheet" type="text/css" href="/videos/yoxview/skins/top_menu/yoxview.top_menu.css">
+
+</head>
+  
+  
+  
+  <body data-spy="scroll" data-target=".subnav" data-offset="50">
+  
+    <div class="container">
+        <div class="content">
+            <div class="row">
+                <div class="span12 columns">
+                    {{ content }}
+                </div>
+            </div>
+        </div>
+    </div>
+  </body>
+</html>

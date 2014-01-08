@@ -8,27 +8,36 @@
     <meta name="description" content="Portfolio and Blog">
     <meta name="author" content="Sam Ennis"> 
 	
-	<link href="/css/videos_layout.css" rel="stylesheet">
-	<script type="text/javascript" src="/js/videos_layout.js"></script>
+	<link href="/css/all.css" rel="stylesheet">
 	
 	<!--Yoxview Video Gallery requirements-->
     <script type="text/javascript" src="/videos/yoxview/yox.js"></script>
-	<!--<script type='text/javascript' src='/videos/yoxview/yoxview-init.js'></script>-->
-	<link rel="Stylesheet" type="text/css" href="/videos/yoxview/yoxview.css">
+	<script type='text/javascript' src='/videos/yoxview/yoxview-init.js'></script>
+	<link rel="Stylesheet" type="text/css" href="http://www.yoxigen.com/yoxview/yoxview/yoxview.css">
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
-	<script type="text/javascript" src="/videos/yoxview/jquery.yoxview-2.21.min.js"></script>
-	<link rel="Stylesheet" type="text/css" href="/videos/yoxview/skins/top_menu/yoxview.top_menu.css">
+	<script type="text/javascript" src="http://www.yoxigen.com/yoxview/yoxview/jquery.yoxview-2.2.min.js"></script>
 	<script type="text/javascript">
+    $(document).ready(function(){
+        $("#yoxview_youtube").yoxview({
+					skin: "top_menu",
+					dataUrl: "http://www.youtube.com/my_playlists?p=PLpkyA_SVVJs3sCar_Sq0O_4owLCXI3J5S",
+        });
+    });
+    </script>
+	<link rel="Stylesheet" type="text/css" href="http://www.yoxigen.com/yoxview/yoxview/skins/top_menu/yoxview.top_menu.css">
+	
+	<!--<script type="text/javascript">
 		   $(document).ready(function(){
 		        $(".yoxview").yoxview({ 
 		            skin: "top_menu",
+					dataUrl: "http://www.youtube.com/my_playlists?p=PLpkyA_SVVJs3sCar_Sq0O_4owLCXI3J5S",
 		            thumbnailsOptions: {
 		                setTitles: true,
 		                thumbnailsClass: "thumbnail"
 		            }
 		        });
 		    });
-	</script>
+	</script>-->
 	<!--end Yoxview -->
 		
     <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
@@ -38,35 +47,17 @@
 
     <!-- Le fav and touch icons -->
     <link rel="shortcut icon" href="/favicon.ico">
-	</head>
-  
-  
+  </head>
   <body data-spy="scroll" data-target=".subnav" data-offset="50">
-	
-	<div class="container">
+  
+    <div class="container">
         <div class="content">
-			<div class="row">
-                <div class="span7 columns">
-					<a class="brand" href="/" style="margin-left: -20px; margin-right: 20px;" >
-						<i class="icon-home"></i>
-					</a>
-					<!-- insert banner here -->
-                    <h2 style="display:inline;">Videos</h2>
-					<div>
-					{{ content }}
-					</div>
-                </div>
-                <div class="span4 columns">
-                     {% include aboutme.html %}
-                </div>
-                <div class="span4 columns">
-                     {% include sidebar_menu.html %}
+            <div class="row">
+                <div class="span12 columns">
+                    {{ content }}
                 </div>
             </div>
         </div>
-		
     </div>
-	<p></p>
-	{% include footer.html %}
   </body>
 </html>

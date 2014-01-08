@@ -42,7 +42,7 @@
     function YoxView()
     {
         var yoxviewPath = (yoxviewPath || Yox.getPath(/(.*\/)jquery\.yoxview/i));
-        var defaults = {
+		var defaults = {
             autoHideInfo: true, // If false, the info bar (with image count and title) is always displayed.
             autoPlay: false, // If true, slideshow mode starts when the popup opens
             backgroundColor: "#000000",

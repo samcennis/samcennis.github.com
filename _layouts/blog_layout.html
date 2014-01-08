@@ -24,7 +24,14 @@
         <div class="content">
             <div class="row">
                 <div class="span7 columns">
-                    {{ content }}
+                    <a class="brand" href="/" style="margin-left: -20px; margin-right: 20px;" >
+						<i class="icon-home"></i>
+					</a>
+					<!-- insert banner here -->
+                    <h2 style="display:inline;">Wales Blog</h2>
+					<div>
+					{{ content }}
+					</div>
                 </div>
                 <div class="span4 columns">
                      {% include aboutme.html %}
@@ -35,7 +42,7 @@
             </div>
         </div>
     </div>
-
+	
     {% include footer.html %}
   </body>
 </html>

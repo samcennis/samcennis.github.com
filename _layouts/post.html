@@ -5,7 +5,11 @@ layout: layout
 <div class="content">    
     <div class="row">	
         <div class="span7 column">
-            <h1>{{ page.title }}</h1>
+            <a class="brand" href="/" style="margin-left: -20px; margin-right: 20px;" >
+				<i class="icon-home"></i>
+			</a>
+			<!-- insert banner here -->
+			<h2 style="display:inline;">{{ page.title }} </h2>
         </div>
     </div>
     
@@ -17,14 +21,13 @@ layout: layout
     
     <div class="pager hidden-phone hidden-tablet">
         <a class="prev" href="{{ page.previous.url }}" title="Previous Post: {{page.previous.title}}"><i class="icon-arrow-left icon-white"></i></a>
-        <a class="next" href="{{ page.next.url }}" title="Previous Post: {{page.next.title}}"><i class="icon-arrow-right icon-white"></i></a>
+        <a class="next" href="{{ page.next.url }}" title="Next Post: {{page.next.title}}"><i class="icon-arrow-right icon-white"></i></a>
     </div>
     
     <div class="row">	
         <div class="span7 column">
             <p>
-              <i class="icon-calendar"></i> {{ page.date | date: "%B %e, %Y" }}
-              | <i class="icon-comment"></i> <a href="{{ site.url }}{{ page.url }}#disqus_thread""></a>     
+              <i class="icon-calendar"></i> {{ page.date | date: "%B %e, %Y" }}   
               <br />
               <i class="icon-tags"></i> Tags :{% for tag in page.tags %} <a href="/tags/{{ tag }}" rel="tooltip" title="View pages tagged with &quot;{{ tag }}&quot;"><span class="label label-info">{{ tag }}</span></a>  {% if forloop.last != true %} {% endif %} {% endfor %}
               <br />
@@ -55,16 +58,5 @@ layout: layout
     </div>
     {% endif %}
 -->
-    <!-- Twitter -->
-    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-
-    <!-- Google + -->
-    <script type="text/javascript">
-      (function() {
-        var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
-        po.src = 'https://apis.google.com/js/plusone.js';
-        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
-      })();
-    </script>
 </div>
     
