@@ -24,21 +24,22 @@
         <div class="content">
             <div class="row">
                 <div class="span7 columns">
-                    <a class="brand" href="/" style="margin-left: -20px; margin-right: 20px;" >
+                    <a class="brand" href="/" >
 						<i class="icon-home"></i>
 					</a>
-					<!-- insert banner here -->
-                    <h2 style="display:inline;">Wales Blog</h2>
+					<img class="img-rounded img-responsive" src="/img/walesheader.jpg">
 					<div>
 					{{ content }}
 					</div>
                 </div>
                 <div class="span4 columns">
+					<div>
                      {% include aboutme.html %}
-                </div>
-                <div class="span4 columns">
+					</div>
+					<div>
                      {% include sidebar_menu.html %}
-                </div>
+					</div>
+				</div>
             </div>
         </div>
     </div>
