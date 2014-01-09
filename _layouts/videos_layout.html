@@ -8,6 +8,7 @@
     <meta name="description" content="Portfolio and Blog">
     <meta name="author" content="Sam Ennis"> 
 	
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 	<link href="/css/videos_layout.css" rel="stylesheet">
 	<script type="text/javascript" src="/js/videos_layout.js"></script>
 	
@@ -42,33 +43,19 @@
   
   
   <body data-spy="scroll" data-target=".subnav" data-offset="50">
-	
-	<div class="container">
-        <div class="content">
-			<div class="row">
-                <div class="span7 columns">
-					<a class="brand" href="/" style="margin-left: -20px; margin-right: 20px;" >
-						<i class="icon-home"></i>
-					</a>
-					<!-- insert banner here -->
-                    <h2 style="display:inline;">Videos</h2>
-					<div>
-					{{ content }}
-					</div>
-                </div>
-                <div class="span4 columns">
-					<div>
-                     {% include aboutme.html %}
-					</div>
-					<div>
-                     {% include sidebar_menu.html %}
-					</div>
-				</div>
-            </div>
-        </div>
+		<div class="container header-container">
 		
-    </div>
-	<p></p>
-	{% include footer.html %}
+			{% include site_header.html %}
+        </div>
+		<div class="container content-container">
+                <div class="span7 columns main-content">
+                    {{ content }}
+                </div>
+                <div class="span4 columns about-content">
+					{% include aboutme.html %}
+				</div>
+        </div>
+
+    {% include footer.html %}
   </body>
 </html>
