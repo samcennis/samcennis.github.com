@@ -109,6 +109,10 @@ input, button, select, textarea {
 .main-content{
 }
 
+.content-container{
+	margin-bottom: 100px;
+}
+
 /* site-logo */
 .site-logo-iframe{
 	border: 0px;
