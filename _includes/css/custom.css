@@ -102,22 +102,11 @@ input, button, select, textarea {
     font-family: "Open Sans", sans-serif;
 }
 
-.header-container, .content-container {
-	width: 1600px !important;
-	max-width: 1600px !important;
-}
-
 .about-content{
-	padding: 2% 6% 12% 4%;
-	display: block;
 	margin-top: 58px;
-	width: 30%;
 }
 
 .main-content{
-	padding: 2% 4% 12% 6%;
-	display: block;
-	width: 70%;
 }
 
 /* site-logo */
