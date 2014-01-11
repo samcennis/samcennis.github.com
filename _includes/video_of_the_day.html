@@ -1,0 +1,10 @@
+
+<a id="votd" href="{{ video.video_link }}" class="thumbnail clearfix">
+	<img src="{{ video.thumbnail_link }}" title="{{ video.title }}" >
+	<span>{{ video.title }}</span>
+	<div class="thumbnail_description">
+		{% if video.date %}<b>{{ video.date }}. </b>{% endif %}
+		{% if video.contest_name %} {{ video.contest_name }}. {% endif %}
+		{{ video.description }}
+	</div>
+</a>

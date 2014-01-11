@@ -1,0 +1,9 @@
+{
+  "title"    : "{{ video.title }}",
+  "video_link"  : "{{ video.summary }}",
+  "thumbnail_link" : "{{ video.category }}",
+  "date" : "{{ video.date }}",
+  "contest_name" : "{{ video.contest_name }}",
+  "description" : "{{ video.description }}",
+  }
+}

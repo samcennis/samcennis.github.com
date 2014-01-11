@@ -15,12 +15,24 @@ vertical-align:baseline;
 margin:0;
 }
 
-footer{
+iframe{
+	max-width: 100%;
+}
+
+.page-gen{
 	background: #222;
 	padding-top:1%;
+	padding-bottom:1%;
 	box-shadow: 0px -7px 7px -7px #333;
-
+	
 }
+
+.page-gen-text{
+	width: 1170px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
 
 img {
 	border:0;
@@ -31,7 +43,7 @@ img {
 
 img.floatLeft {
     float: left;
-    margin: 4px 8px 4px 0px;
+    margin: 4px 14px 4px 0px;
 }
 
 img.img-rounded {
@@ -184,3 +196,11 @@ margin-left: 2rem;
 .pager a:hover .icon.next { background-position:-100px -70px; }
 .pager .icon-arrow-left { position: fixed; left: 0; }
 .pager .icon-arrow-right { position: fixed; }
+
+
+.post-thumbnail{
+	height: auto;
+	width: 250px;
+}
+
+

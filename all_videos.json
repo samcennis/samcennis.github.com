@@ -1,0 +1,8 @@
+---
+---
+[
+  {% for video in site.data.contests %}
+    {% include video.json %},
+  {% endfor %}
+  null
+]
