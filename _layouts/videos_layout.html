@@ -12,25 +12,23 @@
 	<link href="/css/videos_layout.css" rel="stylesheet">
 	<script type="text/javascript" src="/js/videos_layout.js"></script>
 	
-	<!--Yoxview Video Gallery requirements-->
-    <script type="text/javascript" src="/videos/yoxview/yox.js"></script>
-	<!--<script type='text/javascript' src='/videos/yoxview/yoxview-init.js'></script>-->
-	<link rel="Stylesheet" type="text/css" href="/videos/yoxview/yoxview.css">
-	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
-	<script type="text/javascript" src="/videos/yoxview/jquery.yoxview-2.21.min.js"></script>
-	<link rel="Stylesheet" type="text/css" href="/videos/yoxview/skins/top_menu/yoxview.top_menu.css">
+	<!--Magnific Video Gallery requirements-->
+	<link rel="Stylesheet" type="text/css" href="/videos/magnific/magnific-popup.css">
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> 
+	<script type="text/javascript" src="/videos/magnific/jquery.magnific-popup.min.js"></script>
 	<script type="text/javascript">
-		   $(document).ready(function(){
-		        $(".yoxview").yoxview({ 
-		            skin: "top_menu",
-		            thumbnailsOptions: {
-		                setTitles: true,
-		                thumbnailsClass: "thumbnail"
-		            }
-		        });
-		    });
+		$(document).ready(function() {
+			$('.popup-youtube, .popup-vimeo, .popup-gmaps').magnificPopup({
+			disableOn: 700,
+			type: 'iframe',
+			mainClass: 'mfp-fade',
+			removalDelay: 160,
+			preloader: false,
+			fixedContentPos: false
+		});
+});
 	</script>
-	<!--end Yoxview -->
+	<!--end Magnific -->
 		
     <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
@@ -44,12 +42,12 @@
   
   <body data-spy="scroll" data-target=".subnav" data-offset="50">
 		<div class="container header-container">
-		
+			
 			{% include site_header.html %}
         </div>
 		<div class="container content-container">
                 <div class="span7 columns main-content">
-                    {{ content }}
+					{{ content }}
                 </div>
                 <div class="span4 columns about-content">
 					{% include aboutme.html %}
