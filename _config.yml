@@ -15,4 +15,6 @@ author:
     youtube: pelicanbeam
     gravatar: /img/blogHeader-small.jpg
     
-include: [videos, blog]
+includes:
+- videos
+- blog
