@@ -14,3 +14,5 @@ author:
     github: samcennis
     youtube: pelicanbeam
     gravatar: /img/blogHeader-small.jpg
+    
+include: [videos, blog]
